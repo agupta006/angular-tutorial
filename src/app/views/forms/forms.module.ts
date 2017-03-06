@@ -6,6 +6,7 @@ import { SharedModule } from '../../shared/shared.module';
 
 import { FormsRoutingModule } from './forms-routing.module';
 import { HomeComponent } from './home/home.component';
+import { FormTemplateComponent } from './form-template/form-template.component';
 
 @NgModule({
   imports: [
@@ -13,6 +14,6 @@ import { HomeComponent } from './home/home.component';
     FormsRoutingModule,
     SharedModule
   ],
-  declarations: [HomeComponent]
+  declarations: [HomeComponent, FormTemplateComponent]
 })
 export class FormsModule { }
