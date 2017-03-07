@@ -1,3 +1,12 @@
-<p>
+<!--<p>
   available-pipes works!
-</p>
+</p>-->
+<h3> Making use of built in pipes such as uppercase and date </h3>
+<p> My {{name | uppercase}} is on {{ birthday | date | uppercase}} </p> 
+<h4> Passing parameter to a pipe </h4>
+<p> My {{name | uppercase}} is on {{ birthday | date:"MM/dd/yy"}} </p> 
+<div> 
+<h3>This is an example of binding button to toggle the inputted parameter</h3> 
+<p> My birthday is on {{ birthday | date : format}}</p>
+<button (click)="toggle()"> Change format </button>
+</div>
