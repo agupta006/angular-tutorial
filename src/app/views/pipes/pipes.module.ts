@@ -7,6 +7,7 @@ import { PipesRoutingModule } from './pipes-routing.module';
 import { HomeComponent } from './home/home.component';
 import { CustomPipesComponent } from './custom-pipes/custom-pipes.component';
 import { AvailablePipesComponent } from './available-pipes/available-pipes.component';
+import { CubePipe } from './custom-pipes/cube.pipe';
 
 @NgModule({
   imports: [
@@ -14,6 +15,6 @@ import { AvailablePipesComponent } from './available-pipes/available-pipes.compo
     PipesRoutingModule,
     SharedModule
   ],
-  declarations: [HomeComponent, CustomPipesComponent, AvailablePipesComponent]
+  declarations: [HomeComponent, CustomPipesComponent, AvailablePipesComponent, CubePipe]
 })
 export class PipesModule { }
